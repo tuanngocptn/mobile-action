@@ -5,7 +5,7 @@ runs:
   steps:
     - run: echo Hello Panda Script.
       shell: bash
-    - run: source index.sh
+    - run: source index.sh && panda_health_check
       shell: bash
     - run: panda_health_check
       shell: bash
