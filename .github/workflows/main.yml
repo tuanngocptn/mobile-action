@@ -10,6 +10,4 @@ jobs:
 
       - name: Install panda script
         uses: /tuanngocptn/rn-action@main
-
-      - name: Health check
-        run: panda_health_check
+        script: panda_health_check
