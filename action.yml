@@ -1,23 +1,16 @@
 name: "Hello World"
 description: "Greet someone"
 inputs:
-  who-to-greet: # id of input
-    description: "Who to greet"
+  script:
+    description: "Script to run"
     required: true
-    default: "World"
-outputs:
-  random-number:
-    description: "Random number"
-    value: ${{ steps.random-number-generator.outputs.random-number }}
+    default: "panda_health_check"
 runs:
   using: "composite"
   steps:
-    - run: echo Hello ${{ inputs.who-to-greet }}.
+    - run: echo Hello Panda Script.
       shell: bash
-    - id: random-number-generator
-      run: echo "random-number=$(echo $RANDOM)" >> $GITHUB_OUTPUT
-      shell: bash
-    - run: echo "${{ github.action_path }}" >> $GITHUB_PATH
-      shell: bash
-    - run: goodbye.sh
+    - run: |
+        source index.sh
+        ${{ inputs.script }}
       shell: bash
