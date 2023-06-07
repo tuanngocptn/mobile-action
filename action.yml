@@ -3,7 +3,7 @@ description: "Greet someone"
 runs:
   using: "composite"
   steps:
-    - run: echo Hello Panda Script.
+    - run: echo Hello
       shell: bash
     - run: source index.sh
       shell: bash
