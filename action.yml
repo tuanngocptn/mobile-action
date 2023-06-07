@@ -1,16 +1,9 @@
 name: "Hello World"
 description: "Greet someone"
-inputs:
-  script:
-    description: "Script to run"
-    required: true
-    default: "panda_health_check"
 runs:
   using: "composite"
   steps:
     - run: echo Hello Panda Script.
       shell: bash
-    - run: |
-        source index.sh
-        ${{ inputs.script }}
+    - run: source index.sh
       shell: bash
