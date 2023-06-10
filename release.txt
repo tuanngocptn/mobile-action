@@ -20,4 +20,5 @@ New release for customer/development/v1.0.1+0 at 30/05/2023 16:14:55
 New release for customer/staging/v1.0.1+0 at 30/05/2023 16:15:03
 New release for customer/production/v1.0.0+0 at 30/05/2023 16:15:12
 New release for customer/production/v1.0.0+0-1 at 30/05/2023 21:10:06
+
 New release for customer/development/v1.0.0+0 at 30/05/2023 21:12:11
