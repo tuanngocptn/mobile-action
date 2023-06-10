@@ -23,15 +23,15 @@ get_message_information() {
   echo $MESSAGE_INFO
 }
 send_telegram() {
-  DATA_PUSH=''
+  echo $1 $2 $3
   if [ "${2}" ]; then
     if [ "${3}" ]; then
-      send_telegram_topic $1 $2 "$3"
+      # send_telegram_topic $1 $2 "$3"
     else
-      send_telegram_normal $1 "$2"
+      # send_telegram_normal $1 "$2"
     fi
   else
-    send_telegram_liberty $1
+    # send_telegram_liberty $1
   fi
 }
 
