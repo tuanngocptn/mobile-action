@@ -1,5 +1,4 @@
 send_telegram() {
-  DATA_PUSH=''
   if [ "${2}" ]; then
     if [ "${3}" ]; then
       send_telegram_topic $1 $2 "$3"
